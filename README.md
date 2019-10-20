@@ -11,6 +11,8 @@ To Implement that library Go to your app build.gradle file and paste the library
 com.android.volley:volley:1.1.1
 It seems like this :-
 Implementing Volley LibraryNow let's move on to the Activity class. Let's see the Source code -
+
+
 RequestQueue mRequstQu;
 mRequstQu = Volley.newRequestQueue(MainActivity.this);
 String url = "https://api.myjson.com/bins/xcuq8";
@@ -40,8 +42,11 @@ JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
     }
 });
 
-
 mRequstQu.add(request);
+
+
+
+
 Here 'request' variable contains the whole JSON Object. From that object lets get the array of "Movie" by this
 JSONArray movie = response.getJSONArray("Movie");
 Now 'movie' contains the array of multiple objects. Let's see if we try to print 'movie' in our logcat how it looks :
