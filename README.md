@@ -1,6 +1,6 @@
 # JSON Parse | Android | Java
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![JSON Parse](https://github.com/saadh393/JSON-Parse/blob/master/Medium%20Banner.jpg)
 
 
 JSON stands for JavaScript Object Notation. It is structured, lightweight, human-readable and easy to parse. It's the best alternative to XML when our android app needs to interchange data from the server. XML parsing is very complex as compare to JSON parsing.
