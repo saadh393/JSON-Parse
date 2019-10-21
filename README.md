@@ -1,6 +1,6 @@
 # JSON Parse | Android | Java
 
-[logo]: https://github.com/saadh393/JSON-Parse/blob/master/Medium%20Banner.jpg"Logo Title Text 2"
+![logo]: https://github.com/saadh393/JSON-Parse/blob/master/Medium%20Banner.jpg"Logo Title Text 2"
 
 JSON stands for JavaScript Object Notation. It is structured, lightweight, human-readable and easy to parse. It's the best alternative to XML when our android app needs to interchange data from the server. XML parsing is very complex as compare to JSON parsing.
 First, We have to understand how JSON works. JSON contains Objects, Arrays and key and value. An object is represented by Curly Braces: "{}", Array is represented by Square Brackets: "[]"
