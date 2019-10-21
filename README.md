@@ -10,11 +10,14 @@ Everything between curly braces :{} is called JSON Object & everything between 
 No, It's not. See the Sample JSON file which will help you to understand it by your own and we will use this to fetch data. This JSON file is hosted on https://api.myjson.com/bins/xcuq8
 Simple JSON ValueSo, We will learn how you can parse JSON data easily in your app. To do so we will use a simple android Library Called Volley.
 To Implement that library Go to your app build.gradle file and paste the library.
+```
 com.android.volley:volley:1.1.1
+```
 It seems like this :-
+
 Implementing Volley LibraryNow let's move on to the Activity class. Let's see the Source code -
 
-
+```JAVA
 RequestQueue mRequstQu;
 mRequstQu = Volley.newRequestQueue(MainActivity.this);
 String url = "https://api.myjson.com/bins/xcuq8";
@@ -46,12 +49,15 @@ JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
 
 mRequstQu.add(request);
 
-
+```
 
 
 Here 'request' variable contains the whole JSON Object. From that object lets get the array of "Movie" by this
+```JAVA
 JSONArray movie = response.getJSONArray("Movie");
+```
 Now 'movie' contains the array of multiple objects. Let's see if we try to print 'movie' in our logcat how it looks :
 Now we will fetch values from movie into a so-called JSONObject variable named 'item' into a for loop. So that we can get the values from the object.
 Now we will see how the result seems :
+
 Got it !! We get the values from the JSON. Pretty easy. Hope You have't face any problem. You also able to find more information from the official documentation here : https://developer.android.com/training/volley/
