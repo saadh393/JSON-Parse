@@ -8,12 +8,17 @@ First, We have to understand how JSON works. JSON contains Objects, Arrays and k
 Everything between curly braces :{} is called JSON Object & everything between square brackets : [] is a JSON Object. A JSON object can contain different key-value pairs. The value of a key can be an Array. And Array may contain different Objects. And Multiple objects are separated by a comma. Seems difficult?
 
 No, It's not. See the Sample JSON file which will help you to understand it by your own and we will use this to fetch data. This JSON file is hosted on https://api.myjson.com/bins/xcuq8
+
+![Sample Json Code](https://github.com/saadh393/JSON-Parse/blob/master/JSON.png)
+
 Simple JSON ValueSo, We will learn how you can parse JSON data easily in your app. To do so we will use a simple android Library Called Volley.
 To Implement that library Go to your app build.gradle file and paste the library.
 ```
 com.android.volley:volley:1.1.1
 ```
 It seems like this :-
+
+![Sample Json Code](https://github.com/saadh393/JSON-Parse/blob/master/implementation.png)
 
 Implementing Volley LibraryNow let's move on to the Activity class. Let's see the Source code -
 
@@ -57,7 +62,14 @@ Here 'request' variable contains the whole JSON Object. From that object lets ge
 JSONArray movie = response.getJSONArray("Movie");
 ```
 Now 'movie' contains the array of multiple objects. Let's see if we try to print 'movie' in our logcat how it looks :
+
+![Sample Json Code](https://github.com/saadh393/JSON-Parse/blob/master/logcat%201.png)
+
 Now we will fetch values from movie into a so-called JSONObject variable named 'item' into a for loop. So that we can get the values from the object.
+
+![Sample Json Code](https://github.com/saadh393/JSON-Parse/blob/master/code%201.png)
+
 Now we will see how the result seems :
+![Sample Json Code](https://github.com/saadh393/JSON-Parse/blob/master/logcat%202.png)
 
 Got it !! We get the values from the JSON. Pretty easy. Hope You have't face any problem. You also able to find more information from the official documentation here : https://developer.android.com/training/volley/
